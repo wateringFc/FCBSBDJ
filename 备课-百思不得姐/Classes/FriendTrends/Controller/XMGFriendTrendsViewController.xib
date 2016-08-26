@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGFriendTrendsViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="qRu-1G-UGN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-HC-JZe">
+                    <rect key="frame" x="0.0" y="175" width="600" height="250"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gXI-vF-Bqg">
+                            <rect key="frame" x="276" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="LWk-Wz-TEU"/>
+                                <constraint firstAttribute="height" constant="48" id="sY7-4h-PF7"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhV-gb-9a2">
+                            <rect key="frame" x="183" y="95" width="235" height="61"/>
+                            <string key="text">快快登录吧，关注百思最in牛人
+好友动态让你过把瘾儿~
+噢耶~~~~!</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkU-Qy-a96">
+                            <rect key="frame" x="179" y="202" width="243" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="6Rx-If-7I8"/>
+                                <constraint firstAttribute="width" constant="243" id="ncJ-sz-vxG"/>
+                            </constraints>
+                            <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="friendsTrend_login_click">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginBut:" destination="-1" eventType="touchUpInside" id="TCe-GE-ztD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="CkU-Qy-a96" secondAttribute="bottom" id="FFv-Fx-7iA"/>
+                        <constraint firstAttribute="centerX" secondItem="qhV-gb-9a2" secondAttribute="centerX" id="O3Y-K6-YFf"/>
+                        <constraint firstAttribute="centerY" secondItem="qhV-gb-9a2" secondAttribute="centerY" id="OGT-Nm-597"/>
+                        <constraint firstAttribute="centerX" secondItem="CkU-Qy-a96" secondAttribute="centerX" id="RDx-qC-nv2"/>
+                        <constraint firstItem="gXI-vF-Bqg" firstAttribute="top" secondItem="f4I-HC-JZe" secondAttribute="top" id="VPv-He-jr9"/>
+                        <constraint firstAttribute="height" constant="250" id="k6O-zq-Dpl"/>
+                        <constraint firstAttribute="centerX" secondItem="gXI-vF-Bqg" secondAttribute="centerX" id="oyb-od-vVF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f4I-HC-JZe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Exo-pU-SfN"/>
+                <constraint firstAttribute="centerY" secondItem="f4I-HC-JZe" secondAttribute="centerY" id="kGn-gV-jWn"/>
+                <constraint firstAttribute="trailing" secondItem="f4I-HC-JZe" secondAttribute="trailing" id="lnb-mi-ixV"/>
+                <constraint firstAttribute="centerX" secondItem="f4I-HC-JZe" secondAttribute="centerX" id="pFW-Tw-TTD"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>

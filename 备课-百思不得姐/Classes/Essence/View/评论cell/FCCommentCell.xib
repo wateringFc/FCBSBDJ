@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="comment" rowHeight="101" id="KGk-i7-Jjw" customClass="FCCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_AddV_authen" translatesAutoresizingMaskIntoConstraints="NO" id="sme-LO-J4F">
+                        <rect key="frame" x="11" y="12" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="B3D-nb-QSK"/>
+                            <constraint firstAttribute="height" constant="35" id="rpo-gc-u6x"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_manIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1vg-zB-7px">
+                        <rect key="frame" x="51" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="chO-IV-3Oc"/>
+                            <constraint firstAttribute="height" constant="20" id="xzA-oy-rJY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acq-ub-Ruw" userLabel="昵称">
+                        <rect key="frame" x="76" y="13" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oo8-VQ-dDX">
+                        <rect key="frame" x="59" y="40" width="216" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="flf-jD-CHQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIN-pB-inL">
+                        <rect key="frame" x="290" y="10" width="20" height="22"/>
+                        <state key="normal" image="mainCellDing"/>
+                        <state key="highlighted" image="mainCellDingClick"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hig-14-lfF">
+                        <rect key="frame" x="274" y="42" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUs-E4-YTQ" userLabel="音频播放按钮">
+                        <rect key="frame" x="59" y="40" width="62" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="uPB-qw-WMW"/>
+                            <constraint firstAttribute="height" constant="22" id="zHn-iR-KsK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="imageEdgeInsets" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="12''" image="play-voice-stop" backgroundImage="play-voice-bg">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="voiceButClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tlU-c7-ynd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AUs-E4-YTQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="51" id="1Bw-ZB-KXs"/>
+                    <constraint firstAttribute="bottom" secondItem="Oo8-VQ-dDX" secondAttribute="bottom" constant="10" id="3ae-tp-hcN"/>
+                    <constraint firstAttribute="trailing" secondItem="Oo8-VQ-dDX" secondAttribute="trailing" constant="45" id="6Sn-M0-XWA"/>
+                    <constraint firstItem="sme-LO-J4F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="6Yq-R2-w2d"/>
+                    <constraint firstItem="hig-14-lfF" firstAttribute="top" secondItem="GIN-pB-inL" secondAttribute="bottom" constant="10" id="91f-su-So1"/>
+                    <constraint firstItem="hig-14-lfF" firstAttribute="trailing" secondItem="GIN-pB-inL" secondAttribute="trailing" id="9pB-u0-NcZ"/>
+                    <constraint firstAttribute="trailing" secondItem="GIN-pB-inL" secondAttribute="trailing" constant="10" id="EBL-C5-Xt4"/>
+                    <constraint firstItem="AUs-E4-YTQ" firstAttribute="top" secondItem="Oo8-VQ-dDX" secondAttribute="top" id="GQM-MV-o9o"/>
+                    <constraint firstItem="GIN-pB-inL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KVe-Qe-Hcs"/>
+                    <constraint firstItem="1vg-zB-7px" firstAttribute="leading" secondItem="sme-LO-J4F" secondAttribute="trailing" constant="5" id="QzQ-Qy-DFb"/>
+                    <constraint firstItem="1vg-zB-7px" firstAttribute="top" secondItem="sme-LO-J4F" secondAttribute="top" id="REy-ce-S6f"/>
+                    <constraint firstItem="Acq-ub-Ruw" firstAttribute="leading" secondItem="1vg-zB-7px" secondAttribute="trailing" constant="5" id="YpF-AS-Wqt"/>
+                    <constraint firstItem="Oo8-VQ-dDX" firstAttribute="top" secondItem="Acq-ub-Ruw" secondAttribute="bottom" constant="10" id="fSP-2t-icn"/>
+                    <constraint firstItem="Acq-ub-Ruw" firstAttribute="centerY" secondItem="1vg-zB-7px" secondAttribute="centerY" id="gCz-cb-qaG"/>
+                    <constraint firstItem="sme-LO-J4F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="gQm-AW-bXY"/>
+                    <constraint firstItem="Oo8-VQ-dDX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="51" id="rbB-hL-6K9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="conten" destination="Oo8-VQ-dDX" id="aCV-Ko-rV7"/>
+                <outlet property="ding" destination="hig-14-lfF" id="hBV-cY-Djx"/>
+                <outlet property="imgView" destination="sme-LO-J4F" id="kZk-JY-fpa"/>
+                <outlet property="name" destination="Acq-ub-Ruw" id="cve-aQ-4kq"/>
+                <outlet property="playVoiceBut" destination="AUs-E4-YTQ" id="mUc-tu-lr9"/>
+                <outlet property="sexView" destination="1vg-zB-7px" id="ZWz-Et-XUM"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="368.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Profile_AddV_authen" width="14" height="14"/>
+        <image name="Profile_manIcon" width="13" height="13"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellDingClick" width="20" height="20"/>
+        <image name="play-voice-bg" width="62" height="22"/>
+        <image name="play-voice-stop" width="12" height="12"/>
+    </resources>
+</document>

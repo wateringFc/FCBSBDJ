@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGRecommendViewController">
+            <connections>
+                <outlet property="categoryTableView" destination="cIz-3f-iR4" id="3Ru-Gu-KGv"/>
+                <outlet property="userTableView" destination="wXV-YW-GI7" id="qwN-kO-Ex9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cIz-3f-iR4">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Sdz-RX-8Em"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SdE-VQ-fIM"/>
+                        <outlet property="delegate" destination="-1" id="RDT-gg-qt3"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-YW-GI7">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4r6-LN-SmM"/>
+                        <outlet property="delegate" destination="-1" id="avd-Xu-bF8"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cIz-3f-iR4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IA0-a6-V1G"/>
+                <constraint firstAttribute="bottom" secondItem="cIz-3f-iR4" secondAttribute="bottom" id="Q5b-Jc-a3S"/>
+                <constraint firstAttribute="bottom" secondItem="wXV-YW-GI7" secondAttribute="bottom" id="dvd-Ud-bqb"/>
+                <constraint firstItem="wXV-YW-GI7" firstAttribute="leading" secondItem="cIz-3f-iR4" secondAttribute="trailing" id="gam-dj-Jbd"/>
+                <constraint firstItem="wXV-YW-GI7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kVD-lS-HvF"/>
+                <constraint firstItem="cIz-3f-iR4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mg0-ax-h09"/>
+                <constraint firstAttribute="trailing" secondItem="wXV-YW-GI7" secondAttribute="trailing" id="s3F-WR-Alm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

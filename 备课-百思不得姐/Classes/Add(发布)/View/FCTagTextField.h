@@ -1,0 +1,18 @@
+//
+//  FCTagTextField.h
+//  备课-百思不得姐
+//
+//  Created by 方存 on 16/8/26.
+//  Copyright © 2016年 小码哥. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+
+@interface FCTagTextField : UITextField
+/**
+ *  按了删除键的回调
+ */
+@property (copy, nonatomic) void (^ deleteBlock)();
+
+@end
